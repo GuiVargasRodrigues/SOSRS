@@ -14,16 +14,39 @@
 
   <main>
     <form id="sintomasForm">
-      <label for="sintomas">Digite seus sintomas:</label>
-      <input type="text" id="sintomas" name="sintomas" required>
+      <fieldset>
+        <legend>Selecione seus sintomas:</legend>
+        <label><input type="checkbox" name="sintomas" value="febre alta"> Febre Alta</label>
+        <label><input type="checkbox" name="sintomas" value="dor de cabeça"> Dor de cabeça</label>
+        <label><input type="checkbox" name="sintomas" value="sangramentos"> Sangramentos</label>
+        <label><input type="checkbox" name="sintomas" value="dor muscular"> Dor muscular</label>
+        <label><input type="checkbox" name="sintomas" value="calafrios"> Calafrios</label>
+        <label><input type="checkbox" name="sintomas" value="olhos vermelhos"> Olhos vermelhos</label>
+        <label><input type="checkbox" name="sintomas" value="vômitos"> Vômitos</label>
+        <label><input type="checkbox" name="sintomas" value="contrações musculares"> Contrações musculares dolorosas</label>
+        <label><input type="checkbox" name="sintomas" value="dificuldade para respirar"> Dificuldade para respirar</label>
+        <label><input type="checkbox" name="sintomas" value="pressão alta"> Pressão alta</label>
+        <label><input type="checkbox" name="sintomas" value="sudorese"> Sudorese</label>
+        <label><input type="checkbox" name="sintomas" value="sangramentos nas fezes"> Sangramentos nas fezes</label>
+        <label><input type="checkbox" name="sintomas" value="dores abdominais"> Dores abdominais</label>
+        <label><input type="checkbox" name="sintomas" value="muco nas fezes"> Muco nas fezes</label>
+        <label><input type="checkbox" name="sintomas" value="fadiga"> Fadiga</label>
+        <label><input type="checkbox" name="sintomas" value="icterícia"> Icterícia</label>
+        <label><input type="checkbox" name="sintomas" value="urina escura"> Urina escura</label>
+        <label><input type="checkbox" name="sintomas" value="fezes claras"> Fezes claras</label>
+        <label><input type="checkbox" name="sintomas" value="perda de apetite"> Perda de apetite</label>
+        <label><input type="checkbox" name="sintomas" value="erupções cutâneas"> Erupções cutâneas</label>
+        <label><input type="checkbox" name="sintomas" value="dores nas articulações"> Dores nas articulações</label>
+        <label><input type="checkbox" name="sintomas" value="hemorragia intensa"> Hemorragia intensa</label>
+        <label><input type="checkbox" name="sintomas" value="edema"> Edema</label>
+        <label><input type="checkbox" name="sintomas" value="rubor"> Rubor</label>
+      </fieldset>
       <button type="submit">Diagnosticar</button>
     </form>
+
+    <div id="diagnostico"></div>
   </main>
 
-  <footer>
-    <p>Rodapé da página.</p>
-  </footer>
-
-  <script src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
