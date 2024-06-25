@@ -1,32 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header, footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 1em 0;
-  }
-  
-  main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  input, button {
-    margin: 0.5em 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #f7f1f1;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+}
+
+button {
+  margin-top: 1em;
+}
+
+#diagnostico {
+  margin-top: 2em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #faf8f8;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
