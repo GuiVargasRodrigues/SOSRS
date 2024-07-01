@@ -15,6 +15,8 @@ document.getElementById('sintomasForm').addEventListener('submit', function(e) {
     paginaDoenca = 'hepatite_a.html';
   } else if (sintomas.includes('febre alta') && sintomas.includes('dores musculares') && sintomas.includes('erupções cutâneas') && sintomas.includes('dores nas articulações') && sintomas.includes('hemorragia intensa') && sintomas.includes('dificuldade para respirar') && sintomas.includes('edema') && sintomas.includes('rubor') && sintomas.includes('dor de cabeça')) {
     paginaDoenca = 'dengue.html';
+  } else if (sintomas.includes('dor intensa no local da picada') && sintomas.includes('inchaço') && sintomas.includes('vermelhidão') && sintomas.includes('dificuldade para respirar')) {
+    paginaDoenca = 'animais_peconhentos.html';
   }
 
   // Redirecionamento para a página identificada
