@@ -1,54 +1,42 @@
 body {
+  background-color: red;
+  color: white;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-header, footer {
-  background-color: #f7f1f1;
+header {
+  background-color: white;
+  color: red;
+  padding: 20px;
   text-align: center;
-  padding: 1em 0;
 }
 
 main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2em;
+  background-color: red;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
-fieldset {
+button {
+  background-color: white;
+  color: red;
+  padding: 10px 20px;
   border: none;
-  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgrey;
 }
 
 label {
   display: block;
-  margin: 0.5em 0;
-}
-
-button {
-  margin-top: 1em;
-}
-
-#diagnostico {
-  margin-top: 2em;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #faf8f8;
-  text-align: center;
-  width: 80%;
-  max-width: 600px;
+  margin: 10px 0;
+  color: white;
 }
