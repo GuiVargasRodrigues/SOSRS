@@ -31,13 +31,13 @@ function diagnosticarDoenca(sintomas) {
     'calafrios': './dengue.html',
     'olhos vermelhos': './dengue.html',
     'vômitos': './dengue.html',
-    'contrações musculares': './tétano.html',
-    'dificuldade para respirar': './tétano.html',
-    'pressão alta': './tétano.html',
-    'sudorese': './tétano.html',
-    'sangramentos nas fezes': './diarréia_aguda.html',
-    'dores abdominais': './diarréia_aguda.html',
-    'muco nas fezes': './diarréia_aguda.html',
+    'contrações musculares': './tetano.html',
+    'dificuldade para respirar': './tetano.html',
+    'pressão alta': './tetano.html',
+    'sudorese': './tetano.html',
+    'sangramentos nas fezes': './diarreia_aguda.html',
+    'dores abdominais': './diarreia_aguda.html',
+    'muco nas fezes': './diarreia_aguda.html',
     'fadiga': './hepatite_a.html',
     'icterícia': './hepatite_a.html',
     'urina escura': './hepatite_a.html',
@@ -52,7 +52,8 @@ function diagnosticarDoenca(sintomas) {
     'eritema': './animais_peconhentos.html',
     'hematoma': './animais_peconhentos.html',
     'formação de bolhas': './animais_peconhentos.html',
-    'áreas de ulceração': './animais_peconhentos.html'
+    'áreas de ulceração': './animais_peconhentos.html',
+    'olhos vermelhos': './leptospirose.html'
   };
 
   // Procurar a página de doença correspondente aos sintomas selecionados
