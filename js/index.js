@@ -1,66 +1,21 @@
-// Função para processar o formulário ao diagnosticar os sintomas
-document.getElementById('sintomasForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita o envio padrão do formulário
+function diagnosticar() {
+  const sintomas = document.querySelectorAll('input[name="sintoma"]:checked');
+  const sintomasArray = Array.from(sintomas).map(cb => cb.value);
+  const sintomasSelecionados = sintomasArray.join(', ');
 
-  // Obter todos os sintomas selecionados
-  const sintomasSelecionados = [];
-  const checkboxes = document.querySelectorAll('input[name="sintomas"]:checked');
-  checkboxes.forEach(function(checkbox) {
-    sintomasSelecionados.push(checkbox.value);
-  });
-
-  // Diagnosticar com base nos sintomas selecionados
-  const paginaDoenca = diagnosticarDoenca(sintomasSelecionados);
-
-  // Redirecionar para a página da doença
-  if (paginaDoenca) {
-    window.location.href = paginaDoenca;
+  if (sintomasSelecionados.includes("Febre Alta, dor de cabeça, sangramentos, dor muscular, calafrios, olhos vermelhos e vômito")) {
+      window.location.href = "./leptospirose.html";
+  } else if (sintomasSelecionados.includes("Contrações musculares dolorosas, dificuldade para respirar, febre, Pressão alta e sudorese")) {
+      window.location.href = "./tétano.html";
+  } else if (sintomasSelecionados.includes("sangramentos nas fezes, dores abdominais; muco")) {
+      window.location.href = "./diarréia_aguda.html";
+  } else if (sintomasSelecionados.includes("fadiga, icterícia, urina escura, fezes claras e perda de apetite")) {
+      window.location.href = "./hepatite_a.html";
+  } else if (sintomasSelecionados.includes("febre alta, dores musculares, erupções cutâneas, dores nas articulações, hemorragia intensa, dificuldade para respirar, edema, rubor, febre, dor de cabeça")) {
+      window.location.href = "./dengue.html";
+  } else if (sintomasSelecionados.includes("Dor , eritema, hematoma e formação de bolhas, áreas ulceração")) {
+      window.location.href = "./animais_peconhentos.html";
   } else {
-    alert('Não foi possível diagnosticar a doença. Por favor, selecione mais sintomas.');
+      alert("Nenhuma doença correspondente aos sintomas selecionados foi encontrada.");
   }
-});
-
-// Função para diagnosticar a doença com base nos sintomas selecionados
-function diagnosticarDoenca(sintomas) {
-  // Mapear os sintomas para as páginas de doenças correspondentes
-  const sintomasParaDoenca = {
-    'febre alta': './dengue.html',
-    'dor de cabeça': './dengue.html',
-    'sangramentos': './dengue.html',
-    'dor muscular': './dengue.html',
-    'calafrios': './dengue.html',
-    'olhos vermelhos': './dengue.html',
-    'vômitos': './dengue.html',
-    'contrações musculares': './tetano.html',
-    'dificuldade para respirar': './tetano.html',
-    'pressão alta': './tetano.html',
-    'sudorese': './tetano.html',
-    'sangramentos nas fezes': './diarreia_aguda.html',
-    'dores abdominais': './diarreia_aguda.html',
-    'muco nas fezes': './diarreia_aguda.html',
-    'fadiga': './hepatite_a.html',
-    'icterícia': './hepatite_a.html',
-    'urina escura': './hepatite_a.html',
-    'fezes claras': './hepatite_a.html',
-    'perda de apetite': './hepatite_a.html',
-    'erupções cutâneas': './dengue.html',
-    'dores nas articulações': './dengue.html',
-    'hemorragia intensa': './dengue.html',
-    'edema': './dengue.html',
-    'rubor': './dengue.html',
-    'dor após picada': './animais_peconhentos.html',
-    'eritema': './animais_peconhentos.html',
-    'hematoma': './animais_peconhentos.html',
-    'formação de bolhas': './animais_peconhentos.html',
-    'áreas de ulceração': './animais_peconhentos.html'
-  };
-
-  // Procurar a página de doença correspondente aos sintomas selecionados
-  for (const sintoma of sintomas) {
-    if (sintomasParaDoenca.hasOwnProperty(sintoma)) {
-      return sintomasParaDoenca[sintoma];
-    }
-  }
-
-  return null;
 }

@@ -17,15 +17,18 @@ const startCamera = (facingMode = 'environment') => {
         }
     }).then((stream) => {
         videoPreview.srcObject = stream;
-    })
-}
+    }).catch((error) => {
+        console.error("Error accessing the camera: ", error);
+    });
+};
 
 const stopCamera = () => {
     if (videoPreview.srcObject) {
         const stream = videoPreview.srcObject;
         const tracks = stream.getTracks().forEach((track) => track.stop());
+        videoPreview.srcObject = null;
     }
-}
+};
 
 const btnCamera = document.querySelector('#btn-camera');
 const canvas = document.querySelector('#canvas');
@@ -53,17 +56,17 @@ btnToggleCamera.addEventListener('click', () => {
     if (currentFacingMode == 'environment') {
         currentFacingMode = 'user';
     } else {
-        currentFacingMode = 'environment'
+        currentFacingMode = 'environment';
     }
 
     startCamera(currentFacingMode);
-})
+});
 
 const btnOpenCamera = document.querySelector('#btn-open-camera');
 btnOpenCamera.addEventListener('click', () => {
     dialogCamera.classList.toggle('hidden');
     startCamera(currentFacingMode);
-})
+});
 
 const btnCloseDialog = document.querySelector('#btn-close-dialog');
 btnCloseDialog.addEventListener('click', () => {
