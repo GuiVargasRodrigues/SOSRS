@@ -33,8 +33,13 @@ function diagnosticarDoenca(sintomas) {
     'vômitos': './dengue.html',
     'contrações musculares': './tetano.html',
     'dificuldade para respirar': './tetano.html',
+<<<<<<< HEAD
     'pressão alta': './tétano.html',
     'sudorese': './tétano.html',
+=======
+    'pressão alta': './tetano.html',
+    'sudorese': './tetano.html',
+>>>>>>> 42bb815d9e0ee58673b93dc6274ddceaf083d18c
     'sangramentos nas fezes': './diarreia_aguda.html',
     'dores abdominais': './diarreia_aguda.html',
     'muco nas fezes': './diarreia_aguda.html',
@@ -48,11 +53,20 @@ function diagnosticarDoenca(sintomas) {
     'hemorragia intensa': './dengue.html',
     'edema': './dengue.html',
     'rubor': './dengue.html',
+<<<<<<< HEAD
     'dor após picada': './animais_peçonhentos.html',
     'eritema': './animais_peçonhentos.html',
     'hematoma': './animais_peçonhentos.html',
     'formação de bolhas': './animais_peçonhentos.html',
     'áreas de ulceração': './animais_peçonhentos.html'
+=======
+    'dor após picada': './animais_peconhentos.html',
+    'eritema': './animais_peconhentos.html',
+    'hematoma': './animais_peconhentos.html',
+    'formação de bolhas': './animais_peconhentos.html',
+    'áreas de ulceração': './animais_peconhentos.html',
+    'olhos vermelhos': './leptospirose.html'
+>>>>>>> 42bb815d9e0ee58673b93dc6274ddceaf083d18c
   };
 
   // Procurar a página de doença correspondente aos sintomas selecionados
