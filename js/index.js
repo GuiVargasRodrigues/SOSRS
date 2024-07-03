@@ -31,13 +31,13 @@ function diagnosticarDoenca(sintomas) {
     'calafrios': './dengue.html',
     'olhos vermelhos': './dengue.html',
     'vômitos': './dengue.html',
-    'contrações musculares': './tétano.html',
-    'dificuldade para respirar': './tétano.html',
+    'contrações musculares': './tetano.html',
+    'dificuldade para respirar': './tetano.html',
     'pressão alta': './tétano.html',
     'sudorese': './tétano.html',
-    'sangramentos nas fezes': './diarréia_aguda.html',
-    'dores abdominais': './diarréia_aguda.html',
-    'muco nas fezes': './diarréia_aguda.html',
+    'sangramentos nas fezes': './diarreia_aguda.html',
+    'dores abdominais': './diarreia_aguda.html',
+    'muco nas fezes': './diarreia_aguda.html',
     'fadiga': './hepatite_a.html',
     'icterícia': './hepatite_a.html',
     'urina escura': './hepatite_a.html',
@@ -48,11 +48,11 @@ function diagnosticarDoenca(sintomas) {
     'hemorragia intensa': './dengue.html',
     'edema': './dengue.html',
     'rubor': './dengue.html',
-    'dor após picada': './animais_peconhentos.html',
-    'eritema': './animais_peconhentos.html',
-    'hematoma': './animais_peconhentos.html',
-    'formação de bolhas': './animais_peconhentos.html',
-    'áreas de ulceração': './animais_peconhentos.html'
+    'dor após picada': './animais_peçonhentos.html',
+    'eritema': './animais_peçonhentos.html',
+    'hematoma': './animais_peçonhentos.html',
+    'formação de bolhas': './animais_peçonhentos.html',
+    'áreas de ulceração': './animais_peçonhentos.html'
   };
 
   // Procurar a página de doença correspondente aos sintomas selecionados
