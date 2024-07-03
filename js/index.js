@@ -29,7 +29,6 @@ function diagnosticarDoenca(sintomas) {
     'sangramentos': './dengue.html',
     'dor muscular': './dengue.html',
     'calafrios': './dengue.html',
-    'olhos vermelhos': './dengue.html',
     'vômitos': './dengue.html',
     'contrações musculares': './tetano.html',
     'dificuldade para respirar': './tetano.html',
