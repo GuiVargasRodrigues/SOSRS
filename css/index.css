@@ -1,3 +1,5 @@
+/* Estilos gerais para todas as páginas de doenças, exceto index.html */
+
 body {
   background-color: red;
   color: white;
@@ -14,44 +16,79 @@ header {
 }
 
 main {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  display: flex;
 }
 
-form {
+section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  float: right; /* Alinha a imagem à direita */
+  margin-left: 20px; /* Espaçamento à esquerda da imagem */
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
   background-color: red;
-  padding: 20px;
-  border: 2px solid white;
-  border-radius: 10px;
-  max-width: 600px; 
-  margin: auto; 
-}
-
-button {
-  background-color: white;
-  color: red;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-button:hover {
+nav a:hover {
   background-color: lightgrey;
 }
 
-label {
-  display: block;
-  margin: 10px 0;
-  color: white;
+/* Estilos para checkboxes */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 30px; /* Aumenta a largura da checkbox */
+  height: 30px; /* Aumenta a altura da checkbox */
+  background: white;
+  border-radius: 3px;
+  border: 2px solid red;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-bottom: 10px; /* Espaçamento entre checkboxes */
 }
 
-input[type="checkbox"] {
-  margin-right: 10px;
-  vertical-align: middle;
+input[type="checkbox"]:checked {
+  background-color: red;
+  border: 2px solid white;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2714'; /* Caractere de checkmark */
+  display: block;
+  color: white;
+  font-size: 24px; /* Aumenta o tamanho do checkmark */
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  form {
-    padding: 10px;
+  /* Estilos para telas menores (tablets e dispositivos móveis) */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    float: none; /* Remove o alinhamento para que a imagem apareça abaixo do texto */
+    margin: 10px 0; /* Espaçamento entre o texto e a imagem */
   }
 }
