@@ -6,6 +6,27 @@
   <title>SOSRS</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="icon" href="#">
+  <style>
+    .github-button {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .github-button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,7 +35,7 @@
 
   <main>
     <form id="sintomasForm">
-      <fieldset>
+      <fieldset class="checkbox-container">
         <legend>Selecione seus sintomas:</legend>
         <label><input type="checkbox" name="sintomas" value="febre alta"> Febre Alta</label>
         <label><input type="checkbox" name="sintomas" value="dor de cabeça"> Dor de cabeça</label>
@@ -51,6 +72,8 @@
 
     <div id="diagnostico"></div>
   </main>
+
+  <a href="https://github.com/GuiVargasRodrigues/SOSRS" class="github-button" target="_blank">View on GitHub</a>
 
   <script src="./js/index.js"></script>
 </body>
